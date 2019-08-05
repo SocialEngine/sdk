@@ -1,0 +1,23 @@
+{
+  "name": "@socialengine/sdk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "socialengine",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialEngine/sdk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SocialEngine/sdk/issues"
+  },
+  "homepage": "https://github.com/SocialEngine/sdk#readme",
+  "dependencies": {
+    "@socialengine/command": "git://github.com/SocialEngine/command.git"
+  }
+}
