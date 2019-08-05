@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/SocialEngine/sdk#readme",
   "dependencies": {
-    "@socialengine/command": "git://github.com/SocialEngine/command.git"
+    "@socialengine/command": "git://github.com/SocialEngine/command.git",
+    "react": "^16.7.0",
+    "prop-types": "^15.6.1"
   }
 }
