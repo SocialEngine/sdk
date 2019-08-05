@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const files = [
+    '@socialengine/command',
+    '../command/src/console'
+];
+
+for (const file of files) {
+    try {
+        require(file);
+        break;
+    } catch (e) {}
+}
