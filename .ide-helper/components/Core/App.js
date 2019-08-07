@@ -19,6 +19,8 @@ class App {
         return CoreStyleVariables;
     }
 
+    pushState () {}
+
     withEach (...methods) {
         return {
             bind: () => {}
