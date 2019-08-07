@@ -1,6 +1,7 @@
 
 const CoreAppApi = require('./App/Api');
 const CoreAppViewer = require('./App/Viewer');
+const CoreStyleVariables = require('./Style/Variables');
 
 class App {
     /**
@@ -11,6 +12,12 @@ class App {
     }
 
     withException () {}
+
+    css () {}
+
+    get style () {
+        return CoreStyleVariables;
+    }
 
     withEach (...methods) {
         return {
