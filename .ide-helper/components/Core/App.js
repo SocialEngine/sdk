@@ -27,6 +27,10 @@ class App {
         }
     }
 
+    prefetch (...libs) {}
+
+    imports (...libs) {}
+
     /**
      *
      * @param endpoint
