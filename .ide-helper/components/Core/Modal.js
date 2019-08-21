@@ -27,6 +27,12 @@ export class Modal extends React.Component {
         center: true,
         fade: true
     };
+
+    close () {}
+
+    setTitle (title) {}
+
+    setFooter (footer) {}
 }
 
 export function render (Component, props = {}) {}

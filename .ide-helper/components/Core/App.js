@@ -31,6 +31,8 @@ class App {
 
     imports (...libs) {}
 
+    hook (name, callback) {}
+
     /**
      *
      * @param endpoint
