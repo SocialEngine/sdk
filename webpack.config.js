@@ -5,7 +5,11 @@ const fs = require('fs');
 const alias = {};
 const cacheDir = path.join(__dirname, '/.se');
 const srcDir = path.join(__dirname, '/src');
-const ideHelper = path.join(__dirname, '/.ide-helper/webpack.config.js');
+const files = [
+    '../unite-ide-helper/webpack.config.js',
+    '@socialengine/unite-ide-helper'
+];
+
 let ideWebpack = {
     resolve: {
         alias: {}
@@ -26,8 +30,11 @@ for (const dir of fs.readdirSync(cacheDir)) {
     }
 }
 
-if (fs.existsSync(ideHelper)) {
-    ideWebpack = require(ideHelper);
+for (const file of files) {
+    try {
+        ideWebpack = require(file);
+        break;
+    } catch (e) {}
 }
 
 const exportAlias = {
