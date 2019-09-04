@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const path = require('path');
 
 const files = [
     '../command/src/console',
@@ -7,7 +8,7 @@ const files = [
 
 for (const file of files) {
     try {
-        require(file);
+        require(path.join(file));
         break;
     } catch (e) {}
 }
