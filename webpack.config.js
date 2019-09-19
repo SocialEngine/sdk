@@ -6,6 +6,7 @@ const alias = {};
 const cacheDir = path.join(__dirname, '/.se');
 const srcDir = path.join(__dirname, '/src');
 const files = [
+    '../unity/webpack.config.js',
     '../unite-ide-helper/webpack.config.js',
     '@socialengine/unite-ide-helper'
 ];
@@ -48,3 +49,4 @@ module.exports = {
         alias: exportAlias
     }
 };
+
